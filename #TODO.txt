@@ -1,0 +1,9 @@
+- Change to 4 layer: Signal - GND - GND - Signal (Done)
+- Impedence Match usb (Done)
+	- 45Ohm d'impédance single-ended
+	- 90Ohm différenciel
+	- Saturn PCB Toolkit
+- Copper pour USB shield (Done)
+- USB trace same size, same distance (Done)
+- Confirm all trace sizes
+- DNP pull-down pour USB ID
