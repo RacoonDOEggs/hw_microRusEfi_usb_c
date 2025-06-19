@@ -8505,10 +8505,6 @@
 		(uuid "0c22f933-2a30-4cb8-911f-04889aa66e61")
 	)
 	(no_connect
-		(at 186.69 123.19)
-		(uuid "14dabffc-c8a2-4a32-ab87-f191a2dafc54")
-	)
-	(no_connect
 		(at 246.38 163.83)
 		(uuid "9d80ad0e-ec59-4c93-a4ec-24369bf048a6")
 	)
@@ -8761,6 +8757,16 @@
 			(type default)
 		)
 		(uuid "2bf286a9-8d8a-4f20-af25-6a1b3ef01eaf")
+	)
+	(wire
+		(pts
+			(xy 205.74 123.19) (xy 205.74 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dc04a65-331c-4519-80f0-c123776c5038")
 	)
 	(wire
 		(pts
@@ -9321,6 +9327,16 @@
 			(type default)
 		)
 		(uuid "b91d0998-72ae-4e56-91ac-881de5cece18")
+	)
+	(wire
+		(pts
+			(xy 186.69 123.19) (xy 205.74 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad80a1c-9b8e-46f9-90ec-b0031708f782")
 	)
 	(wire
 		(pts
@@ -19818,6 +19834,118 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 205.74 128.27 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "25ddbc3a-9ccb-45c9-b889-d30201d58db3")
+		(property "Reference" "R89"
+			(at 207.772 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 205.74 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 264.922 186.69 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "TBD"
+			(at 354.33 187.325 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RMCF0603JT10K0"
+			(at 87.63 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VEND" "DIGI"
+			(at 87.63 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VEND#" "RMCF0603JT10K0CT-ND"
+			(at 87.63 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "StackPole"
+			(at 87.63 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 205.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e50d5284-3ee2-4b4d-98ee-4496368a2556")
+		)
+		(pin "2"
+			(uuid "d0db029d-7a53-450f-a230-9f4f40eafaac")
+		)
+		(instances
+			(project "micro_rusEFI"
+				(path "/8d063f79-9282-4820-bcf4-1ff3c006cf08/00000000-0000-0000-0000-00005d0250fb"
+					(reference "R89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "UJ20-C-V-C-2-SMT-TR:UJ20-C-V-C-2-SMT-TR")
 		(at 233.68 147.32 0)
 		(unit 1)
@@ -19966,6 +20094,69 @@
 			(project ""
 				(path "/8d063f79-9282-4820-bcf4-1ff3c006cf08/00000000-0000-0000-0000-00005d0250fb"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e335f65-0cd3-4edf-b150-bb6074d8e627")
+		(property "Reference" "#PWR0126"
+			(at 205.74 132.08 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 133.858 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 132.08 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 132.08 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6ed71f9-69d2-4a8b-84f6-8fc52e6baa74")
+		)
+		(instances
+			(project "micro_rusEFI"
+				(path "/8d063f79-9282-4820-bcf4-1ff3c006cf08/00000000-0000-0000-0000-00005d0250fb"
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)

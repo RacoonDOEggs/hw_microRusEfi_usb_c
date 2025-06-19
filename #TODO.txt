@@ -6,4 +6,5 @@
 - Copper pour USB shield (Done)
 - USB trace same size, same distance (Done)
 - Confirm all trace sizes
-- DNP pull-down pour USB ID
+- DNP pull-down pour USB ID (Done)
+- Fix AGND in middle of board
