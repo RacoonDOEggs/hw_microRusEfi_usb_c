@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2286
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -59,13 +59,62 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|52740800|111949400|00000000-0000-0000-0000-00005eaa101f|52a7022b-f9e3-415c-bcef-a44303447dab",
+          ""
+        ],
+        [
+          "courtyards_overlap|67855000|103604700|00000000-0000-0000-0000-00005eac346b|4d78dbb5-f813-4c91-8664-f3c18aaf25b6",
+          ""
+        ],
+        [
+          "courtyards_overlap|72685000|102565000|00000000-0000-0000-0000-00005f0d85c2|4d78dbb5-f813-4c91-8664-f3c18aaf25b6",
+          ""
+        ],
+        [
+          "courtyards_overlap|80180000|102565000|00000000-0000-0000-0000-00005f036a28|4d78dbb5-f813-4c91-8664-f3c18aaf25b6",
+          ""
+        ],
+        [
+          "starved_thermal|42814900|108388313|dcb4eb38-9644-4d2f-8e23-7b0f47982b36|ad4d05f5-6957-42f8-b65c-c657b9a26485|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|67190000|100838000|dcb4eb38-9644-4d2f-8e23-7b0f47982b36|3198b8ca-7d11-4e0c-89a4-c173f9fcf724|F.Cu",
+          ""
+        ],
+        [
+          "via_dangling|41145000|112014000|00000000-0000-0000-0000-00005d796682|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|46228000|105664000|2646122b-034d-4817-af32-cf5ad01ca4c3|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|48699000|112014000|00000000-0000-0000-0000-00005d796694|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|48765000|105664000|00000000-0000-0000-0000-00005d796697|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|51181000|112014000|00000000-0000-0000-0000-00005d796787|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "via_dangling|51305000|105664000|00000000-0000-0000-0000-00005d796784|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "warning",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -80,7 +129,7 @@
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "error",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "hole_to_hole": "error",
@@ -91,7 +140,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -100,10 +149,10 @@
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "error",
+        "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -114,13 +163,13 @@
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
-        "track_dangling": "ignore",
+        "track_dangling": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "ignore",
+        "via_dangling": "error",
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },

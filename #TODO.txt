@@ -7,4 +7,4 @@
 - USB trace same size, same distance (Done)
 - Confirm all trace sizes
 - DNP pull-down pour USB ID (Done)
-- Fix AGND in middle of board
+- Fix AGND in middle of board (Done)
